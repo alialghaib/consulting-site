@@ -101,6 +101,7 @@ section {
   letter-spacing: 1px;
   transition: var(--transition);
   cursor: pointer;
+  font-family: inherit;
 }
 
 .btn-primary {
@@ -729,4 +730,31 @@ footer {
   gap: 3rem;
   align-items: flex-start;
   margin-top: 2rem;
+}
+
+
+.calculator-disclaimer {
+  font-size: 8pt;
+  color: var(--gray);
+  margin-top: 1rem;
+  display: block;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 100%;
+}
+/* Modern dropdown styling */
+.calculator select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fff;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%236c757d' height='18' viewBox='0 0 20 20' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M5.516 7.548l4.489 4.489 4.489-4.489.974.974-5.463 5.463L4.542 8.522z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 1rem;
+  cursor: pointer;
 }

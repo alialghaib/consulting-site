@@ -50,66 +50,69 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <div class="services-grid">
-        <!-- Paving & Stonework -->
-        <div class="service-card hover-scale">
-          <div class="icon">
-            <i class="fas fa-road"></i>
-          </div>
-          <h3>Paving & Stonework</h3>
-          <p>Custom driveways, walkways, and patios.</p>
-        </div>
+<!-- Services Section -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="services-grid">
 
-        <!-- Landscaping -->
-        <div class="service-card hover-scale">
-          <div class="icon">
-            <i class="fas fa-tree"></i>
-          </div>
-          <h3>Landscaping</h3>
-          <p>Complete outdoor design and gardening.</p>
+      <!-- Interlock & Patios -->
+      <div class="service-card hover-scale">
+        <div class="icon">
+          <i class="fas fa-th-large"></i>
         </div>
-
-        <!-- Home Renovations -->
-        <div class="service-card hover-scale">
-          <div class="icon">
-            <i class="fas fa-tools"></i>
-          </div>
-          <h3>Home Renovations</h3>
-          <p>Kitchen, bathroom, and full interior remodeling.</p>
-        </div>
-
-        <!-- Decks & Patios -->
-        <div class="service-card hover-scale">
-          <div class="icon">
-            <i class="fas fa-border-all"></i>
-          </div>
-          <h3>Decks & Patios</h3>
-          <p>Professionally built decks, pergolas, and more.</p>
-        </div>
-
-        <!-- Basements -->
-        <div class="service-card hover-scale">
-          <div class="icon">
-            <i class="fas fa-house-user"></i>
-          </div>
-          <h3>Basements</h3>
-          <p>Turn your basement into a usable, finished space.</p>
-        </div>
-
-        <!-- Solar Systems -->
-        <div class="service-card hover-scale">
-          <div class="icon">
-            <i class="fas fa-solar-panel"></i>
-          </div>
-          <h3>Solar Energy Systems</h3>
-          <p>Add solar panels to save money and energy.</p>
-        </div>
+        <h3>Interlock & Patios</h3>
+        <p>Custom-designed patios, walkways, and driveways using high-quality interlock stone.</p>
       </div>
+
+      <!-- Landscaping -->
+      <div class="service-card hover-scale">
+        <div class="icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <h3>Landscaping</h3>
+        <p>Full-service outdoor design, gardening, and green space transformation.</p>
+      </div>
+
+      <!-- Home Renovations -->
+      <div class="service-card hover-scale">
+        <div class="icon">
+          <i class="fas fas fa-hammer"></i>
+        </div>
+        <h3>Home Renovations</h3>
+        <p>Expert remodeling for kitchens, bathrooms, and complete interiors.</p>
+      </div>
+
+      <!-- Decks & Fences -->
+      <div class="service-card hover-scale">
+        <div class="icon">
+          <i class="fas fa-bars"></i>
+        </div>
+        <h3>Decks & Fences</h3>
+        <p>Professionally built decks, pergolas, privacy fences, and more.</p>
+      </div>
+
+      <!-- Basements -->
+      <div class="service-card hover-scale">
+        <div class="icon">
+          <i class="fas fa-house-user"></i>
+        </div>
+        <h3>Basements</h3>
+        <p>Transform your basement into a functional, beautifully finished space.</p>
+      </div>
+
+      <!-- Solar Energy Systems -->
+      <div class="service-card hover-scale">
+        <div class="icon">
+          <i class="fas fa-solar-panel"></i>
+        </div>
+        <h3>Solar Energy Systems and Maintenance</h3>
+        <p>Install solar panels to reduce energy costs and increase efficiency.</p>
+      </div>
+
+    </div>
   </div>
 </section>
+
 
   <!-- Process Section -->
   <section id="process" class="process">
@@ -209,24 +212,35 @@
             </div>
           </div>
         </div>
+
         <div class="calculator-container">
           <div class="calculator">
-            <h3>Savings Calculator</h3>
+            <h3>Estimate Calculator</h3>
+
             <div class="calculator-input">
-              <label for="currentBill">Current Monthly Energy Bill ($)</label>
-              <input type="number" id="currentBill" value="">
+              <label for="serviceType">Service Type</label>
+              <select id="serviceType">
+                <option value="">Select a Service</option>
+                <option value="interlock">Interlock & Patio</option>
+                <option value="landscaping">Landscaping</option>
+                <option value="decks">Decks & Fences</option>
+              </select>
             </div>
+
+            <div class="calculator-input">
+              <label for="squareFeet">Area (sqft)</label>
+              <input type="number" id="squareFeet" min="1" placeholder="Enter square footage">
+            </div>
+
             <div class="calculator-result">
-              <div>
-                <p>Estimated Annual Savings:</p>
-                <h3 id="annualSavings">$0</h3>
-              </div>
-              <div>
-                <p>10-Year Savings:</p>
-                <h3 id="tenYearSavings">$0</h3>
-              </div>
+              <p>Estimated Cost Range:</p>
+              <h3 id="estimateResult">$0 – $0</h3>
             </div>
-            <button id="calculateBtn" class="btn-primary">Calculate Savings</button>
+            <p class="calculator-disclaimer">
+            *Prices shown are estimates. Final costs may vary based on materials and project scope. Contact us for a detailed quote.
+            </p>
+            <br>
+            <button id="calculateBtn" class="btn-primary">Calculate Estimate</button>
           </div>
         </div>
       </div>
@@ -237,7 +251,7 @@
   <div class="container">
     <div class="section-header">
       <h2>Get In Touch</h2>
-      <p>Ready to upgrade your home with quality craftsmanship and reliable service? <br> Contact us today for a free consultation.</p>
+      <p>Ready to upgrade your home?<br> Contact us today for a free consultation.</p>
     </div>
 
     <div class="contact-grid">
