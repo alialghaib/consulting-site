@@ -1,31 +1,3 @@
-// script.js
-
-// Hero Button Interaction
-/*
-const ctaBtn = document.querySelector('.cta-btn');
-ctaBtn.addEventListener('click', () => {
-    alert('Get your free quote now!');
-});
-
-// Service Card Hover Effect
-const serviceCards = document.querySelectorAll('.card');
-serviceCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        card.style.backgroundColor = '#FF6A00';
-    });
-    card.addEventListener('mouseleave', () => {
-        card.style.backgroundColor = '#FFB800';
-    });
-});
-
-// Contact Form Submission
-const contactForm = document.querySelector('.contact-form');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Thank you for reaching out! We will get back to you soon.');
-    contactForm.reset();
-});
-*/
 
 document.addEventListener('DOMContentLoaded', function () {
     const calculateBtn = document.getElementById('calculateBtn');
