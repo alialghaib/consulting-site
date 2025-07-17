@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
         maxRate = 35;
         break;
       case 'landscaping':
-        minRate = 2;
-        maxRate = 5;
+        minRate = 4;
+        maxRate = 9;
         break;
       case 'decks':
         minRate = 35;
